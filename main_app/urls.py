@@ -140,5 +140,6 @@ urlpatterns = [
          name="student_view_notification"),
     path('student/view/result/', student_views.student_view_result,
          name='student_view_result'),
+         path("firebase-messaging-sw.js", views.showFirebaseJS, name='showFirebaseJS'),
 
 ]

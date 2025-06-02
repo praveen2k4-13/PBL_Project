@@ -9,6 +9,11 @@ from django.views.decorators.csrf import csrf_exempt
 
 from .EmailBackend import EmailBackend
 from .models import Attendance, Session, Subject
+from django.http import HttpResponse
+
+def showFirebaseJS(request):
+    # Replace the content with your desired Firebase messaging script
+    return HttpResponse("/* Firebase messaging script */", content_type="application/javascript")
 
 
 def login_page(request):
