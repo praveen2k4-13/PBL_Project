@@ -1,0 +1,71 @@
+/* Custom color overrides for AdminLTE dashboard */
+
+.main-header.navbar {
+    background-color: #4a90e2 !important; /* Change navbar background to blue */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Add a subtle shadow to the navbar */
+}
+
+.main-sidebar {
+    background-color: #2c3e50 !important; /* Darker sidebar background */
+}
+
+.small-box.bg-info {
+    background-color: #3498db !important; /* Custom info box color */
+}
+
+.small-box.bg-success {
+    background-color: #27ae60 !important; /* Custom success box color */
+}
+
+.small-box.bg-warning {
+    background-color: #f39c12 !important; /* Custom warning box color */
+}
+
+.small-box.bg-danger {
+    background-color: #e74c3c !important; /* Custom danger box color */
+}
+
+/* Change sidebar links color */
+.nav-sidebar .nav-link {
+    color: #ecf0f1 !important;
+}
+
+/* Change sidebar active link background */
+.nav-sidebar .nav-link.active {
+    background-color: #2980b9 !important;
+    color: #ffffff !important;
+}
+
+/* Change the font for the whole dashboard */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Add a subtle shadow to the navbar */
+.main-header.navbar {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Add rounded corners to small boxes */
+.small-box {
+    border-radius: 12px !important;
+}
+
+/* Highlight sidebar menu on hover */
+.nav-sidebar .nav-link:hover {
+    background-color: #34495e !important;
+    color: #fff !important;
+}
+
+/* Change sidebar brand logo background */
+.brand-link {
+    background-color: #22313f !important;
+    color: #fff !important;
+}
+
+/* Style the footer */
+.main-footer {
+    background-color: #2c3e50 !important;
+    color: #bdc3c7 !important;
+    border-top: none;
+}
