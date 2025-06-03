@@ -1,20 +1,24 @@
 {% extends 'main_app/base.html' %}
 {% load static %}
-{% block page_title %}{{page_title}}{% endblock page_title %}
+
+{% block page_title %}
+    {{ page_title|default:"Add Session" }}
+{% endblock page_title %}
 
 {% block content %}
-
 <section class="content">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <!-- general form elements -->
+
+                <!-- Card: Add Session -->
                 <div class="card card-dark">
                     <div class="card-header">
-                        <h3 class="card-title">{{page_title}}</h3>
+                        <h3 class="card-title">{{ page_title|default:"Add Session" }}</h3>
                     </div>
 
-                    {% include "main_app/form_template.html" with messages=messages  form=form button_text="Add Session"%}
+                    {% include "main_app/form_template.html" with messages=messages form=form button_text="Add Session" %}
+
                 </div>
                 <!-- /.card -->
 
