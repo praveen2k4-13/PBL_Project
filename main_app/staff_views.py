@@ -354,4 +354,4 @@ def view_issued_book(request):
             t=(books[i].name,books[i].isbn,issuedBooks[0].issued_date,issuedBooks[0].expiry_date,fine)
             i=i+1
             details.append(t)
-    return render(request, "staff_template/view_issued_book.html", {'issuedBooks':issuedBooks, 'details':details})
+    return render(request, "staff_template/view_issued_book.html", {'issuedBooks':issuedBooks, 'details':details}) //hi
