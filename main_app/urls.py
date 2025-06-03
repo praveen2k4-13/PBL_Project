@@ -23,7 +23,7 @@ urlpatterns = [
     path("", views.login_page, name='login_page'),
     path("get_attendance", views.get_attendance, name='get_attendance'),
     path("firebase-messaging-sw.js", views.showFirebaseJS, name='showFirebaseJS'),
-    path("doLogin/", views.doLogin, name='user_login'),
+    path("doLogin/", views.do_login, name='user_login'),
     path("logout_user/", views.logout_user, name='user_logout'),
     path("admin/home/", hod_views.admin_home, name='admin_home'),
     path("staff/add", hod_views.add_staff, name='add_staff'),
@@ -140,5 +140,6 @@ urlpatterns = [
          name="student_view_notification"),
     path('student/view/result/', student_views.student_view_result,
          name='student_view_result'),
+         path("firebase-messaging-sw.js", views.showFirebaseJS, name='showFirebaseJS'),
 
 ]
